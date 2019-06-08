@@ -22,13 +22,13 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
-                <div id="player1" class="card">
+                <div class="player1" class="card">
                     <div class="card-body">
                         <h3>Player 1</h3>
                         <div class="hide-p1">Waiting for Player 2 to choose</div>
-                        <button id="bear">Bear</button>
-                        <button id="ninja">Ninja</button>
-                        <button id="cowboy">Cowboy</button>
+                        <button class="player1 bear">Bear</button>
+                        <button class="ninja">Ninja</button>
+                        <button class="cowboy">Cowboy</button>
                     </div>
                 </div>
             </div>
@@ -42,21 +42,46 @@
                 </div>
             </div>
             <div class="col-sm-4">
-                <div id="player2" class="card">
+                <div class="player2" class="card">
                     <div class="card-body">
                             <h3>Player 2</h3>
                             <div class="hide-p2">Waiting for Player 2 to choose</div>
-                            <button id="bear">Bear</button>
-                            <button id="ninja">Ninja</button>
-                            <button id="cowboy">Cowboy</button>
+                            <button class="bear">Bear</button>
+                            <button class="ninja">Ninja</button>
+                            <button class="cowboy">Cowboy</button>
                     </div>
                 </div>
             </div>
         </div>
-
-    <div id="chatbox" class="card">
+        <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div id="wins-losses1" class="card">
+                            <div class="card-body">
+                                <h3>Wins: <span id="wins1"></span></h3>
+                                <h3>Losses: <span id="losses1"></span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Ties: <span id="ties"></span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div id="wins-losses2" class="card">
+                            <div class="card-body">
+                                <h3>Wins: <span id="wins2"></span></h3>
+                                <h3>Losses: <span id="losses2"></span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <div id="chatbox" class="card">
             <div class="card-body">
-            Where the chat box goes
+            Where the chat box/game dialogue goes
             </div>
         </div>
     </div>
