@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+       Bear, Ninja, Cowboy!
+    </title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/styles.css">
+
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Bear, Ninja, Cowboy!</h1>
+            <p class="lead">It's like Rock, Paper, Scissors... but cooler... because bears.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div id="player1" class="card">
+                    <div class="card-body">
+                        <h3>Player 1</h3>
+                        <div class="hide-p1">Waiting for Player 2 to choose</div>
+                        <button id="bear">Bear</button>
+                        <button id="ninja">Ninja</button>
+                        <button id="cowboy">Cowboy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div id="player-choices" class="card">
+                    <div class="card-body">
+                        <div>Player 1 has chosen <span id="player1-choice"></span></div>
+                        <div>Player 2 has chosen <span id="player2-choice"></span></div>
+                        <div><span id="winner"></span> wins!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div id="player2" class="card">
+                    <div class="card-body">
+                            <h3>Player 2</h3>
+                            <div class="hide-p2">Waiting for Player 2 to choose</div>
+                            <button id="bear">Bear</button>
+                            <button id="ninja">Ninja</button>
+                            <button id="cowboy">Cowboy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div id="chatbox" class="card">
+            <div class="card-body">
+            Where the chat box goes
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase.js"></script>    
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+</body>
+
+</html>
