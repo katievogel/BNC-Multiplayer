@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>
-       Bear, Ninja, Cowboy!
+        Bear, Ninja, Cowboy!
     </title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -21,39 +21,52 @@
     </div>
     <div class="container">
         <div class="row">
+            <div class="col-sm-4"></div>
             <div class="col-sm-4">
-                <div class="player1" class="card">
-                    <div class="card-body">
-                        <h3>Player 1</h3>
-                        <div class="hide-p1">Waiting for Player 2 to choose</div>
-                        <button class="player1 bear">Bear</button>
-                        <button class="ninja">Ninja</button>
-                        <button class="cowboy">Cowboy</button>
+                <form role="form">
+                    <div class="form-group">
+                        <label for="name-input">Name:</label>
+                        <input class="form-control" id="name-input" type="text">
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div id="player-choices" class="card">
-                    <div class="card-body">
-                        <div>Player 1 has chosen <span id="player1-choice"></span></div>
-                        <div>Player 2 has chosen <span id="player2-choice"></span></div>
-                        <div><span id="winner"></span> wins!</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="player2" class="card">
-                    <div class="card-body">
-                            <h3>Player 2</h3>
-                            <div class="hide-p2">Waiting for Player 2 to choose</div>
-                            <button class="bear">Bear</button>
-                            <button class="ninja">Ninja</button>
-                            <button class="cowboy">Cowboy</button>
-                    </div>
-                </div>
+                    <button class="btn btn-default" id="playername" type="input">Submit</button>
+                </form>
             </div>
         </div>
-        <div class="container">
+            <div class="col-sm-4"></div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="player1" class="card">
+                        <div class="card-body">
+                            <h3 class="player1-name"></h3>
+                            <div class="hide-p1">Waiting for Player 2 to choose</div>
+                            <button class="player1 bear">Bear</button>
+                            <button class="player1 ninja">Ninja</button>
+                            <button class="player1 cowboy">Cowboy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div id="player-choices" class="card">
+                        <div class="card-body">
+                            <div>Player 1 has chosen <span id="player1-choice"></span></div>
+                            <div>Player 2 has chosen <span id="player2-choice"></span></div>
+                            <div><span id="winner"></span> wins!</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="player2" class="card">
+                        <div class="card-body">
+                            <h3 class="player2-name"></h3>
+                            <div class="hide-p2">Waiting for Player 2 to choose</div>
+                            <button class="player2 bear">Bear</button>
+                            <button class="player2 ninja">Ninja</button>
+                            <button class="player2 cowboy">Cowboy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
                         <div id="wins-losses1" class="card">
@@ -79,21 +92,28 @@
                         </div>
                     </div>
                 </div>
-        <div id="chatbox" class="card">
-            <div class="card-body">
-            Where the chat box/game dialogue goes
+                <div id="chatbox" class="card">
+                    <div class="card-body">
+                            <div class="card-body chat-window">
+                                <div class="chit-chat"></div>
+                            </div>
+                        <div class="form-group">
+                            <input class="form-control" id="chat-enter" type="text">
+                                </div>
+                                <button class="btn " id="chat-send" >Send</button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
 
 
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase.js"></script>    
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="assets/app.js"></script>
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+            <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase.js"></script>
+            <script type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script type="text/javascript" src="assets/app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
+            <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#config-web-app -->
 
 </body>

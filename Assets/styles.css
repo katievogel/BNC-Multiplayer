@@ -6,3 +6,7 @@
 .card {
     margin: 20px auto;
 }
+
+.card-body.chat-window {
+    border: 1px solid black;
+}
